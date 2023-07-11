@@ -31,6 +31,10 @@ else:
 _Unset: Any = PydanticUndefined
 
 
+class ModelField:
+    pass
+
+
 class _FromFieldInfoInputs(typing_extensions.TypedDict, total=False):
     """This class exists solely to add type checking for the `**kwargs` in `FieldInfo.from_field`."""
 
